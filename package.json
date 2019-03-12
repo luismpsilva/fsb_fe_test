@@ -1,0 +1,28 @@
+{
+  "name": "fe-test",
+  "version": "1.0.0",
+  "description": "FSB frontend test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backbone.marionette": "^4.0.0",
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "backbone": "^1.4.0",
+    "backbone.radio": "^2.0.0",
+    "jquery": "^3.3.1",
+    "rxjs": "^6.4.0",
+    "socket.io-client": "^2.2.0",
+    "underscore": "^1.9.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-provide-global-plugin": "0.0.1"
+  }
+}

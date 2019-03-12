@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  		<title>FSB FE TEST</title>
+  		<style></style>
+  		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="app">
+		
+	</div>
+
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="/js/index.js"></script>
+	<script>
+	  (() => {
+	    var socket = io();
+	    socket.on('selections', data => {
+	      console.log(data);
+	    });
+	  })();
+	</script>
+	<!--<script>
+		import _ from 'underscore';
+		import Backbone from 'backbone';
+		import { View } from 'backbone.marionette';
+		import SelectionsTemplate from './templates/selections.html';
+		var Selections = Backbone.Model.extend({
+		    idAttribute: 'id',
+		    defaults: {
+		        name: '',
+		        price: '',
+		        active: '',
+		    }
+		});
+		var SelectionsList = Backbone.Collection.extend({
+	    model: Selections,
+	    url: 'http://localhost:3000/rest/selections',
+	    parse: function(response) {
+	    	console.log(response);
+	        return this.models;
+		    }
+		});
+
+		const MyView = View.extend({
+		  template: _.template(SelectionsTemplate)
+		});
+
+		const collection = new Backbone.Collection([
+		  {name: 'Steve'}, {name: 'Helen'}
+		]);
+
+		const myView = new MyView({ collection });		
+	</script>-->
+<body>
+</html>

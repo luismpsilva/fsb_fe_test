@@ -1,0 +1,90 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-container{
+    width: 300px;
+    background: #e8e6e2;
+    border: 1px solid #e8e6e2;
+    border-radius: 5px;
+}
+
+#selections{
+    padding: 10px;
+    background: white;
+}
+
+.counter-label{
+    color: #FF4500;
+    font-size: 17px !important;
+    font-weight: 200;
+    user-select: none;
+}
+.counter-number {
+    width: 65px;
+    border-radius: 4px;
+    background: #3a3937;
+    text-align: center;
+    color: white;
+}
+.counter-number span{
+    font-size: 20px;
+    color:white;
+    user-select: none;
+}
+
+.selection-parent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.selection-children{
+    display: flex;
+    padding: 3px;
+    height: 100%;
+}
+ .selection-children b{
+    color:#3a3937;
+    width: 70%;
+    pointer-events: none;
+    user-select: none;
+}
+ 
+.selection-children div{
+    width: 30%;
+}
+
+.selection-price { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.selection-price div{ 
+    width: 40px;
+    line-height: 30px;
+    text-align: center;
+    background: #e8e6e2;
+    font-weight: 500;
+    color: #5f6886;
+    user-select: none;
+    cursor:pointer;
+    border-radius:2px;
+}
+.selected { 
+    background : cornflowerblue !important;
+    color:white !important;
+    font-weight: bold !important;
+}
+.disabled { 
+    background: #3a3937  !important;
+    cursor: no-drop  !important;
+    color: white  !important;
+}
+
+.counter-wrapper{ 
+    padding: 0px 0px 0px 11px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
